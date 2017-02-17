@@ -1,0 +1,437 @@
+track Final_FST_CDRs
+type bigBed 9 .
+shortLabel FinalFSTCDRs
+longLabel Final CDRs from FST Analysis
+bigDataUrl Final_FST_CDRs.9.bb
+visibility full
+itemRgb On
+
+track Final_VST_CDRs
+type bigBed 9 .
+shortLabel FinalVSTCDRs
+longLabel Final CDRs from VST Analysis
+bigDataUrl Final_VST_CDRs.9.bb
+visibility full
+itemRgb On
+
+track VEP_SNPs
+type bigBed 9 .
+shortLabel VEP_SNPs
+longLabel Variant Effect Predictor SNPs
+bigDataUrl VEP_SNPs_effectOnly.bb
+visibility dense
+itemRgb On
+
+track NoSliding_Total54Callset_ForUCSC_multiwig
+type bigWig
+container multiWig
+shortLabel ZFST_54CallSet_NoSlide
+longLabel NoSliding_Total54Callset_ForUCSC_FstValues
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -5:8
+
+	track NoSliding_Total54Callset_ForUCSC_grey
+	parent NoSliding_Total54Callset_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl NoSliding_Total54Callset_ForUCSC_grey.bw
+	shortLabel 54CallSet_RofA_Zscores_NoSlide_grey
+	longLabel NoSliding_Total54Callset_ForUCSC_grey
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track NoSliding_Total54Callset_ForUCSC_black
+	parent NoSliding_Total54Callset_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl NoSliding_Total54Callset_ForUCSC_black.bw
+	shortLabel 54CallSet_RofA_Zscores_NoSlide_black
+	longLabel NoSliding_Total54Callset_ForUCSC_black
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track NoSliding_Total54Callset_ForUCSC_red
+	parent NoSliding_Total54Callset_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl NoSliding_Total54Callset_ForUCSC_red.bw
+	shortLabel 54CallSet_RofA_Zscores_NoSlide_red
+	longLabel NoSliding_Total54Callset_ForUCSC_red
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 255,67,92
+
+track Sliding_Total54Callset_ForUCSC_multiwig
+type bigWig
+container multiWig
+shortLabel ZFST_54CallSet_Slide
+longLabel Sliding_Total54Callset_ForUCSC_FstValues
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -5:8
+
+	track Sliding_Total54Callset_ForUCSC_grey
+	parent Sliding_Total54Callset_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl Sliding_Total54Callset_ForUCSC_grey.bw
+	shortLabel 54CallSet_RofA_Zscores_Slide_grey
+	longLabel Sliding_Total54Callset_ForUCSC_grey
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track Sliding_Total54Callset_ForUCSC_black
+	parent Sliding_Total54Callset_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl Sliding_Total54Callset_ForUCSC_black.bw
+	shortLabel 54CallSet_RofA_Zscores_Slide_black
+	longLabel Sliding_Total54Callset_ForUCSC_black
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track Sliding_Total54Callset_ForUCSC_red
+	parent Sliding_Total54Callset_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl Sliding_Total54Callset_ForUCSC_red.bw
+	shortLabel 54CallSet_RofA_Zscores_Slide_red
+	longLabel Sliding_Total54Callset_ForUCSC_red
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 255,67,92
+
+track NoSliding_NewWorldWolves_ForUCSC_multiwig
+type bigWig
+container multiWig
+shortLabel ZFST_NewWorldWolves_NoSlide
+longLabel NoSliding_NewWorldWolves_ForUCSC_FstValues
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -5:8
+
+	track NoSliding_NewWorldWolves_ForUCSC_grey
+	parent NoSliding_NewWorldWolves_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl NoSliding_NewWorldWolves_ForUCSC_grey.bw
+	shortLabel ZFST_NewWorldWolves_NoSlide_grey
+	longLabel NoSliding_NewWorldWolves_ForUCSC_grey
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track NoSliding_NewWorldWolves_ForUCSC_black
+	parent NoSliding_NewWorldWolves_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl NoSliding_NewWorldWolves_ForUCSC_black.bw
+	shortLabel ZFST_NewWorldWolves_NoSlide_black
+	longLabel NoSliding_NewWorldWolves_ForUCSC_black
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track NoSliding_NewWorldWolves_ForUCSC_red
+	parent NoSliding_NewWorldWolves_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl NoSliding_NewWorldWolves_ForUCSC_red.bw
+	shortLabel ZFST_NewWorldWolves_NoSlide_red
+	longLabel NoSliding_NewWorldWolves_ForUCSC_red
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 255,67,92
+
+track Sliding_NewWorldWolves_ForUCSC_multiwig
+type bigWig
+container multiWig
+shortLabel ZFST_NewWorldWolves_Slide
+longLabel Sliding_NewWorldWolves_ForUCSC_FstValues
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -5:8
+
+	track Sliding_NewWorldWolves_ForUCSC_grey
+	parent Sliding_NewWorldWolves_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl Sliding_NewWorldWolves_ForUCSC_grey.bw
+	shortLabel ZFST_NewWorldWolves_Slide_grey
+	longLabel Sliding_NewWorldWolves_ForUCSC_grey
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track Sliding_NewWorldWolves_ForUCSC_black
+	parent Sliding_NewWorldWolves_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl Sliding_NewWorldWolves_ForUCSC_black.bw
+	shortLabel ZFST_NewWorldWolves_Slide_black
+	longLabel Sliding_NewWorldWolves_ForUCSC_black
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track Sliding_NewWorldWolves_ForUCSC_red
+	parent Sliding_NewWorldWolves_ForUCSC_multiwig
+	type bigWig
+	bigDataUrl Sliding_NewWorldWolves_ForUCSC_red.bw
+	shortLabel ZFST_NewWorldWolves_Slide_red
+	longLabel Sliding_NewWorldWolves_ForUCSC_red
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 255,67,92
+
+track PerSiteFst_54callset_multiwig
+type bigWig
+container multiWig
+shortLabel ZFST_54callset_PerSite
+longLabel PerSite_54callset_FstValues
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -5:8
+
+	track PerSiteFst_54callset_grey
+	parent PerSiteFst_54callset_multiwig
+	type bigWig
+	bigDataUrl PerSiteFst_54callset_grey.bw
+	shortLabel PerSiteFST_grey
+	longLabel PerSiteFst_54callset_grey
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track PerSiteFst_54callset_black
+	parent PerSiteFst_54callset_multiwig
+	type bigWig
+	bigDataUrl PerSiteFst_54callset_black.bw
+	shortLabel PerSiteFST_black
+	longLabel PerSiteFst_54callset_black
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track PerSiteFst_54callset_red
+	parent PerSiteFst_54callset_multiwig
+	type bigWig
+	bigDataUrl PerSiteFst_54callset_red.bw
+	shortLabel PerSiteFST_red
+	longLabel PerSiteFst_54callset_red
+	graphTypeDefault bar
+	LineOnOff on
+	yLineMark 0.0
+	color 255,67,92
+
+track Z_VST_QuicKmer
+type bigWig
+container multiWig
+shortLabel Z_VST_QuicKmer
+longLabel Z_VST_QuicKmer_54Dogs_NoMxb
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -0.1:8
+yLineMark 0.0
+yLineOnOff on
+
+	track Z_VST_Values_QuicKmer_grey
+	parent Z_VST_QuicKmer
+	type bigWig
+	bigDataUrl QuicKmer_grey.bw
+	shortLabel Z_VST_QuicKmer_grey
+	longLabel Z_VST_QuicKmer_Values_54Dogs_NoMxb_grey
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track Z_VST_Values_QuicKmer_black
+	parent Z_VST_QuicKmer
+	type bigWig
+	bigDataUrl QuicKmer_black.bw
+	shortLabel Z_VST_QuicKmer_black
+	longLabel Z_VST_QuicKmer_Values_54Dogs_NoMxb_black
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track Z_VST_Values_QuicKmer_green
+	parent Z_VST_QuicKmer
+	type bigWig
+	bigDataUrl QuicKmer_green.bw
+	shortLabel Z_VST_QuicKmer_green
+	longLabel Z_VST_Values_QuicKmer_54Dogs_NoMxb_green
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 17,151,17
+
+	track Z_VST_QuicKmer_red
+	parent Z_VST_QuicKmer
+	type bigWig
+	bigDataUrl QuicKmer_red.bw
+	shortLabel Z_VST_QuicKmer_red
+	longLabel Z_VST_QuicKmer_Values_54Dogs_NoMxb_red
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 250,0,0
+
+track Z_VST_FastCN
+type bigWig
+container multiWig
+shortLabel Z_VST_FastCN
+longLabel Z_VST_FastCN_54Dogs_NoMxb
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -0.1:8
+yLineMark 0.0
+yLineOnOff on
+
+	track Z_VST_Values_FastCN_grey
+	parent Z_VST_FastCN
+	type bigWig
+	bigDataUrl FastCN_grey.bw
+	shortLabel Z_VST_FastCN_grey
+	longLabel Z_VST_FastCN_Values_54Dogs_NoMxb_grey
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track Z_VST_Values_FastCN_black
+	parent Z_VST_FastCN
+	type bigWig
+	bigDataUrl FastCN_black.bw
+	shortLabel Z_VST_FastCN_black
+	longLabel Z_VST_FastCN_Values_54Dogs_NoMxb_black
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track Z_VST_Values_FastCN_green
+	parent Z_VST_FastCN
+	type bigWig
+	bigDataUrl FastCN_green.bw
+	shortLabel Z_VST_FastCN_green
+	longLabel Z_VST_Values_FastCN_54Dogs_NoMxb_green
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 17,151,17
+
+	track Z_VST_FastCN_red
+	parent Z_VST_FastCN
+	type bigWig
+	bigDataUrl FastCN_red.bw
+	shortLabel Z_VST_FastCN_red
+	longLabel Z_VST_FastCN_Values_54Dogs_NoMxb_red
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 250,0,0
+
+track QuicKmer_Averages
+type bigWig
+container multiWig
+shortLabel QuicKmer_Averages
+longLabel QuicKmer_AverageCN_Z_Dogs_Wolves
+aggregate solidOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -2:3
+yLineMark 2.0
+yLineOnOff on
+smoothingWindow 16
+
+	track QuicKmer_Wolf_Average
+	parent QuicKmer_Averages
+	type bigWig
+	bigDataUrl QuicKmer_Average_WolfCN.bw
+	shortLabel WOLF_QuicKmer_AverageCN
+	longLabel WOLF_QuicKmer_AverageCN_Z
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 255,175,54
+
+	track QuicKmer_Dog_Average
+	parent QuicKmer_Averages
+	type bigWig
+	bigDataUrl QuicKmer_Average_DogCN.bw
+	shortLabel DOG_QuicKmer_AverageCN
+	longLabel DOG_QuicKmer_AverageCN_Z
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 54,148,255
+
+track FastCN_Averages
+type bigWig
+container multiWig
+shortLabel FastCN_Averages
+longLabel FastCN_AverageCN_Z_Dogs_Wolves
+aggregate solidOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits -2:3
+yLineMark 2.0
+yLineOnOff on
+smoothingWindow 16
+
+	track FastCN_Wolf_Average
+	parent FastCN_Averages
+	type bigWig
+	bigDataUrl FastCN_Average_WolfCN.bw
+	shortLabel WOLF_FastCN_AverageCN
+	longLabel WOLF_FastCN_AverageCN_Z
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 255,175,54
+
+	track FastCN_Dog_Average
+	parent FastCN_Averages
+	type bigWig
+	bigDataUrl FastCN_Average_DogCN.bw
+	shortLabel DOG_FastCN_AverageCN
+	longLabel DOG_FastCN_AverageCN_Z
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 54,148,255
+
+track chr9_InveRsion
+type bigBed 
+shortLabel chr9 Dog InveRsions
+longLabel chr9 Dog InveRsions
+bigDataUrl InveRsion_chr9.bb
+visibility full
+color 100,0,100

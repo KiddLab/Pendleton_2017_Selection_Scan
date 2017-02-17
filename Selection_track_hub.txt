@@ -1,0 +1,6 @@
+hub KiddLabAngelaHub
+shortLabel Track Data Hub for Kidd Lab Angela
+longLabel University of Michigan Medical School, Human Genetics, Kidd Lab
+Angela Annotation Track Hub
+genomesFile Selection_genomes.txt
+email jmkidd@med.umich.edu
