@@ -1,4 +1,4 @@
-hub Pendleton_2017_Selection_Scan
+hub Pendleton_2018_Selection_Scan
 shortLabel Pendleton_Selection
 longLabel University of Michigan Medical School, Human Genetics, Kidd Lab
 genomesFile Selection_genomes.txt
