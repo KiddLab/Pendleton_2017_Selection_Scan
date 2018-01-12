@@ -14,6 +14,8 @@ bigDataUrl Final_VST_CDRs.9.bb
 visibility full
 itemRgb On
 
+
+
 track VEP_SNPs
 type bigBed 9 .
 shortLabel VEP_SNPs
@@ -21,50 +23,6 @@ longLabel Variant Effect Predictor SNPs
 bigDataUrl VEP_SNPs_effectOnly.bb
 visibility dense
 itemRgb On
-
-track NoSliding_Total54Callset_ForUCSC_multiwig
-type bigWig
-container multiWig
-shortLabel ZFST_54CallSet_NoSlide
-longLabel NoSliding_Total54Callset_ForUCSC_FstValues
-aggregate transparentOverlay
-showSubtrackColoronUi on
-maxHeightPixels 500:100:8
-browser full all
-viewLimits -5:8
-
-	track NoSliding_Total54Callset_ForUCSC_grey
-	parent NoSliding_Total54Callset_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl NoSliding_Total54Callset_ForUCSC_grey.bw
-	shortLabel 54CallSet_RofA_Zscores_NoSlide_grey
-	longLabel NoSliding_Total54Callset_ForUCSC_grey
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 142,142,142
-
-	track NoSliding_Total54Callset_ForUCSC_black
-	parent NoSliding_Total54Callset_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl NoSliding_Total54Callset_ForUCSC_black.bw
-	shortLabel 54CallSet_RofA_Zscores_NoSlide_black
-	longLabel NoSliding_Total54Callset_ForUCSC_black
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 0,0,0
-
-	track NoSliding_Total54Callset_ForUCSC_red
-	parent NoSliding_Total54Callset_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl NoSliding_Total54Callset_ForUCSC_red.bw
-	shortLabel 54CallSet_RofA_Zscores_NoSlide_red
-	longLabel NoSliding_Total54Callset_ForUCSC_red
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 255,67,92
 
 track Sliding_Total54Callset_ForUCSC_multiwig
 type bigWig
@@ -105,94 +63,6 @@ viewLimits -5:8
 	bigDataUrl Sliding_Total54Callset_ForUCSC_red.bw
 	shortLabel 54CallSet_RofA_Zscores_Slide_red
 	longLabel Sliding_Total54Callset_ForUCSC_red
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 255,67,92
-
-track NoSliding_NewWorldWolves_ForUCSC_multiwig
-type bigWig
-container multiWig
-shortLabel ZFST_NewWorldWolves_NoSlide
-longLabel NoSliding_NewWorldWolves_ForUCSC_FstValues
-aggregate transparentOverlay
-showSubtrackColoronUi on
-maxHeightPixels 500:100:8
-browser full all
-viewLimits -5:8
-
-	track NoSliding_NewWorldWolves_ForUCSC_grey
-	parent NoSliding_NewWorldWolves_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl NoSliding_NewWorldWolves_ForUCSC_grey.bw
-	shortLabel ZFST_NewWorldWolves_NoSlide_grey
-	longLabel NoSliding_NewWorldWolves_ForUCSC_grey
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 142,142,142
-
-	track NoSliding_NewWorldWolves_ForUCSC_black
-	parent NoSliding_NewWorldWolves_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl NoSliding_NewWorldWolves_ForUCSC_black.bw
-	shortLabel ZFST_NewWorldWolves_NoSlide_black
-	longLabel NoSliding_NewWorldWolves_ForUCSC_black
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 0,0,0
-
-	track NoSliding_NewWorldWolves_ForUCSC_red
-	parent NoSliding_NewWorldWolves_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl NoSliding_NewWorldWolves_ForUCSC_red.bw
-	shortLabel ZFST_NewWorldWolves_NoSlide_red
-	longLabel NoSliding_NewWorldWolves_ForUCSC_red
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 255,67,92
-
-track Sliding_NewWorldWolves_ForUCSC_multiwig
-type bigWig
-container multiWig
-shortLabel ZFST_NewWorldWolves_Slide
-longLabel Sliding_NewWorldWolves_ForUCSC_FstValues
-aggregate transparentOverlay
-showSubtrackColoronUi on
-maxHeightPixels 500:100:8
-browser full all
-viewLimits -5:8
-
-	track Sliding_NewWorldWolves_ForUCSC_grey
-	parent Sliding_NewWorldWolves_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl Sliding_NewWorldWolves_ForUCSC_grey.bw
-	shortLabel ZFST_NewWorldWolves_Slide_grey
-	longLabel Sliding_NewWorldWolves_ForUCSC_grey
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 142,142,142
-
-	track Sliding_NewWorldWolves_ForUCSC_black
-	parent Sliding_NewWorldWolves_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl Sliding_NewWorldWolves_ForUCSC_black.bw
-	shortLabel ZFST_NewWorldWolves_Slide_black
-	longLabel Sliding_NewWorldWolves_ForUCSC_black
-	graphTypeDefault bar
-	LineOnOff on
-	yLineMark 0.0
-	color 0,0,0
-
-	track Sliding_NewWorldWolves_ForUCSC_red
-	parent Sliding_NewWorldWolves_ForUCSC_multiwig
-	type bigWig
-	bigDataUrl Sliding_NewWorldWolves_ForUCSC_red.bw
-	shortLabel ZFST_NewWorldWolves_Slide_red
-	longLabel Sliding_NewWorldWolves_ForUCSC_red
 	graphTypeDefault bar
 	LineOnOff on
 	yLineMark 0.0
@@ -428,10 +298,124 @@ smoothingWindow 16
 	yLineMark 0.0
 	color 54,148,255
 
-track chr9_InveRsion
-type bigBed 
-shortLabel chr9 Dog InveRsions
-longLabel chr9 Dog InveRsions
-bigDataUrl InveRsion_chr9.bb
+track AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+type bigWig
+container multiWig
+shortLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+longLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits 0:100
+yLineMark 0.0
+yLineOnOff on
+
+	track AveragedWindow_XP-CLR_Grids_SimulationCutoffs_grey
+	parent AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+	type bigWig
+	bigDataUrl AveragedWindow_XP-CLR_Grids_SimulationCutoffs_grey.bw
+	shortLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+	longLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs_grey
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track AveragedWindow_XP-CLR_Grids_SimulationCutoffs_black
+	parent AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+	type bigWig
+	bigDataUrl AveragedWindow_XP-CLR_Grids_SimulationCutoffs_black.bw
+	shortLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+	longLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs_black
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track AveragedWindow_XP-CLR_Grids_SimulationCutoffs_green
+	parent AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+	type bigWig
+	bigDataUrl AveragedWindow_XP-CLR_Grids_SimulationCutoffs_green.bw
+	shortLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+	longLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs_green
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 17,151,17
+
+	track AveragedWindow_XP-CLR_Grids_SimulationCutoffs_red
+	parent AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+	type bigWig
+	bigDataUrl AveragedWindow_XP-CLR_Grids_SimulationCutoffs_red.bw
+	shortLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs
+	longLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs_red
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 250,0,0
+	
+track Raw_XP-CLR_Grids_SimulationCutoffs
+type bigWig
+container multiWig
+shortLabel Raw_XP-CLR_Grids_SimulationCutoffs
+longLabel Raw_XP-CLR_Grids_SimulationCutoffs
+aggregate transparentOverlay
+showSubtrackColoronUi on
+maxHeightPixels 500:100:8
+browser full all
+viewLimits 0:100
+yLineMark 0.0
+yLineOnOff on
+
+	track Raw_XP-CLR_Grids_SimulationCutoffs_grey
+	parent Raw_XP-CLR_Grids_SimulationCutoffs
+	type bigWig
+	bigDataUrl Raw_XP-CLR_Grids_SimulationCutoffs_grey.bw
+	shortLabel Raw_XP-CLR_Grids_SimulationCutoffs
+	longLabel Raw_XP-CLR_Grids_SimulationCutoffs_grey
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 142,142,142
+
+	track Raw_XP-CLR_Grids_SimulationCutoffs_black
+	parent Raw_XP-CLR_Grids_SimulationCutoffs
+	type bigWig
+	bigDataUrl Raw_XP-CLR_Grids_SimulationCutoffs_black.bw
+	shortLabel Raw_XP-CLR_Grids_SimulationCutoffs
+	longLabel Raw_XP-CLR_Grids_SimulationCutoffs_black
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 0,0,0
+
+	track Raw_XP-CLR_Grids_SimulationCutoffs_green
+	parent Raw_XP-CLR_Grids_SimulationCutoffs
+	type bigWig
+	bigDataUrl Raw_XP-CLR_Grids_SimulationCutoffs_green.bw
+	shortLabel Raw_XP-CLR_Grids_SimulationCutoffs
+	longLabel Raw_XP-CLR_Grids_SimulationCutoffs_green
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 17,151,17
+
+	track Raw_XP-CLR_Grids_SimulationCutoffs_red
+	parent Raw_XP-CLR_Grids_SimulationCutoffs
+	type bigWig
+	bigDataUrl Raw_XP-CLR_Grids_SimulationCutoffs_red.bw
+	shortLabel Raw_XP-CLR_Grids_SimulationCutoffs
+	longLabel Raw_XP-CLR_Grids_SimulationCutoffs_red
+	graphTypeDefault bar
+	yLineOnOff on
+	yLineMark 0.0
+	color 250,0,0
+
+track XP-CLR_Final_CDRs_SimulationCutoffs
+type bigBed 9 .
+shortLabel XP-CLR Final CDRs 
+longLabel Final CDRs from XP-CLR Analysis - Simulation Cutoffs
+bigDataUrl XP-CLR_CDRs.bb
 visibility full
-color 100,0,100
+itemRgb On
