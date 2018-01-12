@@ -331,17 +331,6 @@ yLineOnOff on
 	yLineMark 0.0
 	color 0,0,0
 
-	track AveragedWindow_XP-CLR_Grids_SimulationCutoffs_green
-	parent AveragedWindow_XP-CLR_Grids_SimulationCutoffs
-	type bigWig
-	bigDataUrl AveragedWindow_XP-CLR_Grids_SimulationCutoffs_green.bw
-	shortLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs
-	longLabel AveragedWindow_XP-CLR_Grids_SimulationCutoffs_green
-	graphTypeDefault bar
-	yLineOnOff on
-	yLineMark 0.0
-	color 17,151,17
-
 	track AveragedWindow_XP-CLR_Grids_SimulationCutoffs_red
 	parent AveragedWindow_XP-CLR_Grids_SimulationCutoffs
 	type bigWig
@@ -387,17 +376,6 @@ yLineOnOff on
 	yLineOnOff on
 	yLineMark 0.0
 	color 0,0,0
-
-	track Raw_XP-CLR_Grids_SimulationCutoffs_green
-	parent Raw_XP-CLR_Grids_SimulationCutoffs
-	type bigWig
-	bigDataUrl Raw_XP-CLR_Grids_SimulationCutoffs_green.bw
-	shortLabel Raw_XP-CLR_Grids_SimulationCutoffs
-	longLabel Raw_XP-CLR_Grids_SimulationCutoffs_green
-	graphTypeDefault bar
-	yLineOnOff on
-	yLineMark 0.0
-	color 17,151,17
 
 	track Raw_XP-CLR_Grids_SimulationCutoffs_red
 	parent Raw_XP-CLR_Grids_SimulationCutoffs
