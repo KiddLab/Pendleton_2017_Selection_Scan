@@ -2,7 +2,7 @@ track Final_FST_CDRs
 type bigBed 9 .
 shortLabel FinalFSTCDRs
 longLabel Final CDRs from FST Analysis
-bigDataUrl Final_FST_CDRs.9.bb
+bigDataUrl Final_Fst_CDRs.9.bb
 visibility full
 itemRgb On
 
@@ -13,8 +13,6 @@ longLabel Final CDRs from VST Analysis
 bigDataUrl Final_VST_CDRs.9.bb
 visibility full
 itemRgb On
-
-
 
 track VEP_SNPs
 type bigBed 9 .
@@ -33,7 +31,7 @@ aggregate transparentOverlay
 showSubtrackColoronUi on
 maxHeightPixels 500:100:8
 browser full all
-viewLimits -5:8
+viewLimits 0:1
 
 	track Sliding_Total54Callset_ForUCSC_grey
 	parent Sliding_Total54Callset_ForUCSC_multiwig
@@ -77,7 +75,7 @@ aggregate transparentOverlay
 showSubtrackColoronUi on
 maxHeightPixels 500:100:8
 browser full all
-viewLimits -5:8
+viewLimits 0:1
 
 	track PerSiteFst_54callset_grey
 	parent PerSiteFst_54callset_multiwig
