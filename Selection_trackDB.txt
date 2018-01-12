@@ -25,7 +25,7 @@ itemRgb On
 track Sliding_Total54Callset_ForUCSC_multiwig
 type bigWig
 container multiWig
-shortLabel ZFST_54CallSet_Slide
+shortLabel FST_54CallSet_Slide
 longLabel Sliding_Total54Callset_ForUCSC_FstValues
 aggregate transparentOverlay
 showSubtrackColoronUi on
@@ -69,7 +69,7 @@ viewLimits 0:1
 track PerSiteFst_54callset_multiwig
 type bigWig
 container multiWig
-shortLabel ZFST_54callset_PerSite
+shortLabel FST_54callset_PerSite
 longLabel PerSite_54callset_FstValues
 aggregate transparentOverlay
 showSubtrackColoronUi on
