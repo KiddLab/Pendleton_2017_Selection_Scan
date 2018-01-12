@@ -1,6 +1,5 @@
-hub KiddLabAngelaHub
-shortLabel Track Data Hub for Kidd Lab Angela
+hub Pendleton_2017_Selection_Scan
+shortLabel Pendleton_Selection
 longLabel University of Michigan Medical School, Human Genetics, Kidd Lab
-Angela Annotation Track Hub
 genomesFile Selection_genomes.txt
 email jmkidd@med.umich.edu
